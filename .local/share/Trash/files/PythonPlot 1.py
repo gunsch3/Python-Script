@@ -1,15 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[1]:
 
 
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-import sys
 
-df = pd.read_csv(sys.argv[1])
+df = pd.read_csv("regrex1.csv")
 df.plot(kind='scatter',x='x',y='y')
 
 plt.savefig('py_orig.png')
